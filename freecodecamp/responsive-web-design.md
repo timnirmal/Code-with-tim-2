@@ -1,6 +1,6 @@
 # Applied Visula Design
 
- The `opacity` property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+ The `opacity` property in CSS is used to adjust the opacity, or conversely, the transparency for an item. \(0-1\)
 
 ## Text
 
@@ -62,7 +62,11 @@ The following table shows how the different `text-transform`values change the ex
 
 
 
- The `font-weight` property sets how thick or thin characters are in a section of text.
+ The `font-weight` property sets how thick or thin characters are in a section of text. \(number\)
+
+ CSS offers the `line-height` property to change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
+
+
 
 ## More
 
@@ -88,5 +92,17 @@ Here's an example of the CSS to create multiple shadows with some blur, at mostl
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 ```
 
+## Anchors
 
+### Hover
+
+This challenge will touch on the usage of pseudo-classes. A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+
+For example, the styling of an anchor tag can be changed for its hover state using the `:hover` pseudo-class selector. Here's the CSS to change the `color` of the anchor tag to red during its hover state:
+
+```text
+a:hover {
+  color: red;
+}
+```
 
