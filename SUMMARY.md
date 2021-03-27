@@ -6,5 +6,5 @@
 
 * [Html](freecodecamp/html.md)
 * [CSS](freecodecamp/css.md)
-* [Responsive Web Design](freecodecamp/responsive-web-design.md)
+* [Applied Visula Design](freecodecamp/responsive-web-design.md)
 
