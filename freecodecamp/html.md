@@ -67,6 +67,8 @@ Sometimes you want to add `a` elements to your website before you know where the
 
 ## List
 
+display: inline;
+
 **Create a Bulleted Unordered List**
 
 Unordered lists start with an opening `<ul>` element, followed by any number of `<li>` elements. Finally, unordered lists close with a `</ul>`
