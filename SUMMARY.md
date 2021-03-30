@@ -7,4 +7,5 @@
 * [Html](freecodecamp/html.md)
 * [CSS](freecodecamp/css.md)
 * [Applied Visual Design](freecodecamp/responsive-web-design.md)
+* [Applied Accessability](freecodecamp/applied-accessability.md)
 
