@@ -292,5 +292,64 @@ In order to create a round object, the `border-radius` property should be set to
 
 You may recall from an earlier challenge that the `box-shadow` property takes values for `offset-x`, `offset-y`, `blur-radius`, `spread-radius` and a color value in that order. The `blur-radius` and `spread-radius` values are optional.
 
+## Animation
 
+**Learn How the CSS @keyframes and animation Properties Work**
+
+To animate an element, you need to know about the animation properties and the `@keyframes` rule. The animation properties control how the animation should behave and the `@keyframes` rule controls what happens during that animation. There are eight animation properties in total. This challenge will keep it simple and cover the two most important ones first:
+
+`animation-name` sets the name of the animation, which is later used by `@keyframes` to tell CSS which rules go with which animations.
+
+`animation-duration` sets the length of time for the animation.
+
+`@keyframes` is how to specify exactly what happens within the animation over the duration. This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%. If you compare this to a movie, the CSS properties for 0% is how the element displays in the opening scene. The CSS properties for 100% is how the element appears at the end, right before the credits roll. Then CSS applies the magic to transition the element over the given duration to act out the scene. Here's an example to illustrate the usage of `@keyframes` and the animation properties:
+
+```text
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+```
+
+For the element with the `anim` id, the code snippet above sets the `animation-name` to `colorful` and sets the `animation-duration` to 3 seconds. Then the `@keyframes` rule links to the animation properties with the name `colorful`. It sets the color to blue at the beginning of the animation \(0%\) which will transition to yellow by the end of the animation \(100%\). You aren't limited to only beginning-end transitions, you can set properties for the element for any percentage between 0% and 100%.
+
+#### Hold animation at end
+
+the original color. You want the button to stay highlighted.
+
+This can be done by setting the `animation-fill-mode` property to `forwards`. The `animation-fill-mode` specifies the style applied to an element when the animation has finished. You can set it like so:
+
+```text
+#rect {
+  animation-fill-mode: forwards;
+}
+```
+
+#### Move 
+
+When elements have a specified `position`, such as `fixed` or `relative`, the CSS offset properties `right`, `left`, `top`, and `bottom` can be used in animation rules to create movement.
+
+```text
+  0% {
+    background-color: blue;
+    top: 0px;
+  }
+```
+
+#### Animation Count
+
+```text
+animation-iteration-count: 3;
+```
+
+In this case the animation will stop after running 3 times, but it's possible to make the animation run continuously by setting that value to `infinite`.
 
