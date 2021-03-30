@@ -379,5 +379,17 @@ animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 
 In the example above, the x and y values are equivalent for each point \(x1 = 0.25 = y1 and x2 = 0.75 = y2\), which if you remember from geometry class, results in a line that extends from the origin to point \(1, 1\). This animation is a linear change of an element during the length of an animation, and is the same as using the `linear` keyword. In other words, it changes at a constant speed.
 
+**Make Motion More Natural Using a Bezier Curve**
 
+This challenge animates an element to replicate the movement of a ball being juggled. Prior challenges covered the `linear` and `ease-out` cubic Bezier curves, however neither depicts the juggling movement accurately. You need to customize a Bezier curve for this.
+
+The `animation-timing-function` automatically loops at every keyframe when the `animation-iteration-count` is set to infinite. Since there is a keyframe rule set in the middle of the animation duration \(at `50%`\), it results in two identical animation progressions at the upward and downward movement of the ball.
+
+The following cubic Bezier curve simulates a juggling movement:
+
+```text
+cubic-bezier(0.3, 0.4, 0.5, 1.6);
+```
+
+Notice that the value of y2 is larger than 1. Although the cubic Bezier curve is mapped on a 1 by 1 coordinate system, and it can only accept x values from 0 to 1, the y value can be set to numbers larger than one. This results in a bouncing movement that is ideal for simulating the juggling ball.
 
