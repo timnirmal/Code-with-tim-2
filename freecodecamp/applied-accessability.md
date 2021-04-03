@@ -216,9 +216,56 @@ Color is a large part of visual design, but its use introduces two accessibility
 
 Previous challenges covered having text alternatives to address the first issue. The last challenge introduced contrast checking tools to help with the second. The WCAG-recommended contrast ratio of 4.5:1 applies for color use as well as gray-scale combinations.
 
-Colorblind users have trouble distinguishing some colors from others - usually in hue but sometimes lightness as well. You may recall the contrast ratio is calculated using the relative luminance \(or lightness\) values of the foreground and background colors.
+Colorblind users have trouble distinguishing some colors from others - usually in hue but sometimes lightness as well. You may recall the contrast ratio is calculated using the relative luminance \(or lightness\) 
 
-In practice, the 4.5:1 contrast ratio can be reached by shading \(adding black to\) the darker color and tinting \(adding white to\) the lighter color. Darker shades on the color wheel are considered to be shades of blues, violets, magentas, and reds, whereas lighter tinted colors are oranges, yellows, greens, and blue-greens.  
+**Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information**
+
+There are various forms of colorblindness. These can range from a reduced sensitivity to a certain wavelength of light to the inability to see color at all. The most common form is a reduced sensitivity to detect greens.
+
+For example, if two similar green colors are the foreground and background color of your content, a colorblind user may not be able to distinguish them. Close colors can be thought of as neighbors on the color wheel, and those combinations should be avoided when conveying important information.
+
+**Note:** Some online color picking tools include visual simulations of how colors appear for different types of colorblindness. These are great resources in addition to online contrast checking calculators.values of the foreground and background colors.
+
+In practice, the 4.5:1 contrast ratio can be reached by shading \(adding black to\) the darker color and tinting \(adding white to\) the lighter color. Darker shades on the color wheel are considered to be shades of blues, violets, magentas, and reds, whereas lighter tinted colors are oranges, yellows, greens, and blue-greens.
+
+```text
+<button accesskey="b">Important Button</button>
+```
+
+Here's an example:
+
+HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
+
+HTML offers the `accesskey` attribute to specify a shortcut key to activate or bring focus to an element. Adding an `accesskey` attribute can make navigation more efficient for keyboard-only users.
+
+**Make Links Navigable with HTML Access Keys**
+
+\*\*\*\*
+
+HTML offers the `accesskey` attribute to specify a shortcut key to activate or bring focus to an element. Adding an `accesskey` attribute can make navigation more efficient for keyboard-only users.
+
+HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
+
+Here's an example:
+
+```text
+<button accesskey="b">Important Button</button>
+```
+
+**Use tabindex to Add Keyboard Focus to an Element**
+
+The HTML `tabindex` attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that the element can be focused on. The value \(an integer that's positive, negative, or zero\) determines the behavior.
+
+Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page. It's in the same order as the elements come in the HTML source markup. This same functionality can be given to other elements, such as `div`, `span`, and `p`, by placing a `tabindex="0"` attribute on them. Here's an example:
+
+```text
+<div tabindex="0">I need keyboard focus!</div>
+```
+
+**Note:** A negative `tabindex` value \(typically -1\) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically \(like when a `div` used for a pop-up window is activated\), and is beyond the scope of these challenges.  
+
+
+  
 
 
 
