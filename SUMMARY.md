@@ -9,4 +9,5 @@
 * [Applied Visual Design](freecodecamp/responsive-web-design.md)
 * [Applied Accessability](freecodecamp/applied-accessability.md)
 * [Responsive Web Design Principles](freecodecamp/untitled.md)
+* [CSS Flexbox](freecodecamp/css-flexbox.md)
 
