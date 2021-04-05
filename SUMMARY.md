@@ -10,4 +10,5 @@
 * [Applied Accessability](freecodecamp/applied-accessability.md)
 * [Responsive Web Design Principles](freecodecamp/untitled.md)
 * [CSS Flexbox](freecodecamp/css-flexbox.md)
+* [CSS Grid](freecodecamp/css-grid.md)
 

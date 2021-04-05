@@ -1,5 +1,7 @@
 # Responsive Web Design Principles
 
+\*\*\*\*
+
 **Create a Media Query**
 
 Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
