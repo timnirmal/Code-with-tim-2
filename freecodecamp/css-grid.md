@@ -45,6 +45,27 @@ Here's an example:
 grid-column: 1 / 3;
 ```
 
-This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns.  
+This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns.
+
+**Use grid-row to Control Spacing**
+
+Of course, you can make items consume multiple rows just like you can with columns. You define the horizontal lines you want an item to start and stop at using the `grid-row` property on a grid item.
+
+
+
+**Align an Item Horizontally using justify-self**Passed
+
+In CSS Grid, the content of each item is located in a box which is referred to as a cell. You can align the content's position within its cell horizontally using the `justify-self` property on a grid item. By default, this property has a value of `stretch`, which will make the content fill the whole width of the cell. This CSS Grid property accepts other values as well:
+
+`start`: aligns the content at the left of the cell,
+
+`center`: aligns the content in the center of the cell,
+
+`end`: aligns the content at the right of the cell.
+
+**Align an Item Vertically using align-self**
+
+Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the `align-self` property on an item. This property accepts all of the same values as `justify-self` from the last challenge.
+
 
 
